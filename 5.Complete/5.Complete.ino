@@ -1,7 +1,9 @@
 #include "LiquidCrystal_I2C.h"
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
+
 void setup() {
+ 
   lcd.init();
   lcd.backlight();
 
@@ -10,6 +12,13 @@ void setup() {
 
   delay(1000);
   lcd.clear();
+  
+  delay(650);
+  
+  pinMode(8, OUTPUT);
+  tone(8,800,100);
+  delay(400);
+
   
 }
 
