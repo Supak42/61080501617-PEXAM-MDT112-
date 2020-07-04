@@ -10,10 +10,11 @@ void setup() {
 
   delay(1000);
   lcd.clear();
+  
 }
 
 void loop() {
-  lcd.setCursor(0, 0);
+  lcd.setCursor(4, 0);
   delay(1000);
 
 }
