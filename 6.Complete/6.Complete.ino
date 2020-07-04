@@ -1,0 +1,29 @@
+#include "LiquidCrystal_I2C.h"
+LiquidCrystal_I2C lcd(0x27, 16, 2);
+
+
+void setup() {
+ 
+  lcd.init();
+  lcd.backlight();
+
+  lcd.setCursor(4, 0);
+  lcd.print("Hello MDT");
+
+  delay(1000);
+  lcd.clear();
+  
+  delay(650);
+  
+  pinMode(8, OUTPUT);
+  tone(8,800,100);
+  delay(400);
+
+  
+}
+
+void loop() {
+  lcd.setCursor(4, 0);
+  delay(1000);
+
+}
